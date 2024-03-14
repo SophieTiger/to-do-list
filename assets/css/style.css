@@ -1,20 +1,32 @@
-/* Set background to the page */
-body {
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+header {
     background: url("../images/desk_background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 0;
-    margin: 0;
-    height: 100vh;
+    height: 230px;
 }
 
 #heading {
     text-align: center;
+    padding-top: 20px;
+    
 }
 
 #score {
     text-align: center;
+    padding-top: 20px;
+}
+
+body {
+    background-color: rgb(240, 235, 227);
 }
 
 #to-dos {
@@ -25,4 +37,19 @@ body {
 #to-do-list {
     list-style-type: none;
     
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    header {
+        height: 150px;
+    }
 }
