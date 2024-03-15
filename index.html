@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Title -->
@@ -23,14 +23,18 @@
             <p id="completed">Completed tasks:</p>
         </div>
     </Header>
-    <div id="to-dos">
-        <input type="text" placeholder="Add task here"><button type="submit">Add</button>
+    <div class="todo-app">
+        <div class="row">
+            <input type="text" id="input-box" placeholder="Add task here">
+            <button type="submit">+</button>
+        </div>
         <ul id="to-do-list">
             <li>Item 1</li>
             <li>Item 2</li>
             <li>Item 3</li>
         </ul>
     </div>
+
     <script src="assets/js/script.js"></script>
 </body>
 

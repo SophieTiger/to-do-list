@@ -29,15 +29,61 @@ body {
     background-color: rgb(240, 235, 227);
 }
 
-#to-dos {
-    text-align: center;
-    margin-top: 70px;
+
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
 }
 
-#to-do-list {
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+    font-size: 16px;
+    border-radius: 50px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    background: #b1e6e0;
+    font-size: 25px;
+    font-weight: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/*#to-do-list {
     list-style-type: none;
     
+}*/
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 8px 8px 8px 50px;
+    user-select: none;
+    cursor: pointer;
 }
+
 
 
 /* Media queries */
@@ -53,3 +99,6 @@ body {
         height: 150px;
     }
 }
+
+
+    
