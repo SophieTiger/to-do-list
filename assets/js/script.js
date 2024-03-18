@@ -1,3 +1,4 @@
+//Sets variables for the html elements input-box and list-container
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
 

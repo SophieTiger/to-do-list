@@ -120,6 +120,18 @@ ul li span:hover {
     background: #edeef0;
 }
 
+#delete-all {
+    right: 20px;
+    bottom: 5px;
+    color: #555;
+    background-color: #fff;
+    font-size: 14px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    margin-top: 50px;
+    padding-left: 20px;
+}
+
 
 
 /* Media queries */
