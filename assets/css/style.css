@@ -95,5 +95,10 @@ ul li {
     }
 }
 
+@media (max-width: 320px) {
+    .todo-app {
+        width: 100%
+    }
+}
 
     
