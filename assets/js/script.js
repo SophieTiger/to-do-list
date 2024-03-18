@@ -16,13 +16,16 @@ function addTask () {
     }
     inputBox.value = "";
 
-
 }
 
-// Remove to-dos from the list
-function removeToDo () {
-
-}
+// Remove to-dos from the list 
+listContainer.addEventListener("click", function(event) {
+    if(event.target.tagName === "LI") {
+        event.target.classList.toggle("checked");
+    } else if (event.target.tagName === "SPAN") {
+        event.target.parentElement.remove();
+    }
+}, false);
 
 // Handles the checked to-dos on the list
 function checkedToDo () {
