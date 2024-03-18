@@ -19,7 +19,11 @@ function addTask () {
 
 }
 
-// Remove to-dos from the list 
+/**
+ * Handles the event when items in the list container are clicked
+ * if the task is clicked the function to check it applies
+ * if the span with x is clicked the task is removed
+ */
 listContainer.addEventListener("click", function(event) {
     if(event.target.tagName === "LI") {
         event.target.classList.toggle("checked");
