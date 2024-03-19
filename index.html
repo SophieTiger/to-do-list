@@ -19,8 +19,8 @@
     <Header>
         <h1 id="heading">Today's To-Do's</h1>
         <div id="score">
-            <p id="tasks">Number of tasks:</p>
-            <p id="completed">Completed tasks:</p>
+            <p>Number of tasks: <span id="number-tasks">0</span></p>
+            <p>Completed tasks: <span id="number-completed">0</span></p>
         </div>
     </Header>
     <div class="todo-app">
@@ -29,7 +29,7 @@
             <button onclick="addTask()">+</button>
         </div>
         <ul id="list-container"></ul>
-        <button id="delete-all">Delete All</button>
+        <button onclick="deleteAll()" id="delete-all">Delete All</button>
     </div>
 
     <!-- JavaScript -->
