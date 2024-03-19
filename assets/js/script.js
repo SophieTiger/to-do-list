@@ -1,6 +1,7 @@
 //Getters for html elements that sets variables 
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
+const scoreContainer = document.getElementById("score");
 const numberTasks = document.getElementById("number-tasks");
 const numberComplete = document.getElementById("number-completed");
 
@@ -67,6 +68,7 @@ function incrementCompletedToDos() {
     let completed = parseInt(numberComplete.innerText);
     completed = completed + 1;
     numberComplete.innerText = completed;
+    saveData();
 }
 /**
  * Decrements the number of completed to-dos by
@@ -76,6 +78,7 @@ function decrementCompletedToDos() {
     let completed = parseInt(numberComplete.innerText);
     completed = completed - 1;
     numberComplete.innerText = completed;
+    saveData();
 }
 
 /**
@@ -84,17 +87,23 @@ function decrementCompletedToDos() {
  */
 function deleteAll() {
     listContainer.innerHTML = "";
+    numberTasks.innerText = 0;
+    numberComplete.innerText = 0;
     saveData();
 }
 
 // Local storage of data
 function saveData() {
-    localStorage.setItem("data", listContainer.innerHTML);
+    localStorage.setItem("listContainer", listContainer.innerHTML);
+    localStorage.setItem("numberTasks", numberTasks.innerHTML);
+    localStorage.setItem("numberComplete", numberComplete.innerHTML);
 
 }
 
 //Function to display saved data
 function showTask() {
-    listContainer.innerHTML = localStorage.getItem("data");
+    listContainer.innerHTML = localStorage.getItem("listContainer");
+    numberTasks.innerHTML = localStorage.getItem("numberTasks");
+    numberComplete.innerHTML = localStorage.getItem("numberComplete");
 }
 showTask();
