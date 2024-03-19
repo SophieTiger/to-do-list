@@ -18,6 +18,7 @@ function addTask() {
         let span = document.createElement("span");
         span.innerHTML = "\u00d7";
         li.appendChild(span);
+        incrementToDos();
     }
     inputBox.value = "";
     saveData();
@@ -48,6 +49,10 @@ listContainer.addEventListener("click", function (event) {
  * on the "score board"
  */
 function incrementToDos() {
+    let tasks = parseInt(numberTasks.innerText);
+    tasks = tasks + 1;
+    numberTasks.innerText = tasks;
+    saveData();
 
 }
 
@@ -57,6 +62,10 @@ function incrementToDos() {
  * from the list
  */
 function decrementToDos() {
+    let tasks = parseInt(numberTasks.innerText);
+    tasks = tasks - 1;
+    numberTasks.innerText = tasks;
+    saveData();
 
 }
 
