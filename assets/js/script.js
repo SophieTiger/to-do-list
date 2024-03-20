@@ -7,10 +7,10 @@ const numberComplete = document.getElementById("number-completed");
 
 // Array of messages to display when list item is checked
 const messages = [
-    "Well Done!",
-    "You're a Star!",
-    "Good Job!",
-    "You Rock!"    
+    "💪 Well Done! 💪",
+    "💫 You're a Star! 💫",
+    "🤩 Good Job! 🤩",
+    "👊 You Rock! 👊"    
 ];
 
 
