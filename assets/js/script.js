@@ -120,8 +120,12 @@ function toastMessage() {
     }, 1500);
 }
 
+/**
+ * Function to pick a random number and return an integer
+ * of 0, 1, 2 or 3 to display that index from the messages array
+ */
 function getRandomNumber() {
-    return Math.floor(Math.random() * 5);
+    return Math.floor(Math.random() * 4);
 }
 
 

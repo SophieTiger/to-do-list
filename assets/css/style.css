@@ -32,6 +32,7 @@ body {
 #toast {
     width: 30%;
     margin: 30px auto 10px;
+    text-align: center;
 }
 
 .todo-app {
@@ -73,6 +74,7 @@ button {
     font-weight: 25px;
     cursor: pointer;
     border-radius: 50%;
+    color: black;
 }
 
 ul li {
