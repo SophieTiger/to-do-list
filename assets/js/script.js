@@ -1,9 +1,17 @@
-//Getters for html elements that sets variables 
+// Getters for html elements that sets variables  
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
 const scoreContainer = document.getElementById("score");
 const numberTasks = document.getElementById("number-tasks");
 const numberComplete = document.getElementById("number-completed");
+
+// Array of messages to display when list item is checked
+const messages = [
+    "Well Done!",
+    "You're a Star!",
+    "Good Job!",
+    "You Rock!"    
+]
 
 
 /**
@@ -41,11 +49,14 @@ listContainer.addEventListener("click", function (event) {
             decrementCompletedToDos();
         } else {
             incrementCompletedToDos();
+            toastMessage();
         }
         event.target.classList.toggle("checked");
         saveData();
     }
 }, false);
+
+
 
 
 
@@ -94,6 +105,25 @@ function decrementCompletedToDos() {
     numberComplete.innerText = completed;
     saveData();
 }
+
+/**
+ * Function to display toast message
+ */
+function toastMessage() {
+    let toast = document.getElementById("toast");
+    let messageChoice = getRandomNumber();
+    message = messages[messageChoice];
+    toast.innerHTML = `<h1>${message}</h1>`;
+    toast.style.visibility = "visible";
+    setTimeout (function () {
+        toast.style.visibility = "hidden";
+    }, 1500);
+}
+
+function getRandomNumber() {
+    return Math.floor(Math.random() * 5);
+}
+
 
 /**
  * Deletes all tasks from the list

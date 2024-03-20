@@ -150,6 +150,11 @@ ul li span:hover {
     header {
         height: 150px;
     }
+    #toast {
+        width: 60%;
+    }
+
+    
 }
 
 @media (max-width: 320px) {
