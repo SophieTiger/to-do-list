@@ -11,7 +11,7 @@ const messages = [
     "You're a Star!",
     "Good Job!",
     "You Rock!"    
-]
+];
 
 
 /**
@@ -19,7 +19,7 @@ const messages = [
  */
 function addTask() {
     if (inputBox.value === '') {
-        alert("You need to write something!")
+        alert("You need to write something!");
     } else {
         let li = document.createElement("li");
         li.innerHTML = inputBox.value;
@@ -113,7 +113,7 @@ function toastMessage() {
     let toast = document.getElementById("toast");
     let messageChoice = getRandomNumber();
     message = messages[messageChoice];
-    toast.innerHTML = `<h1>${message}</h1>`;
+    toast.innerHTML = `<h2>${message}</h2>`;
     toast.style.visibility = "visible";
     setTimeout (function () {
         toast.style.visibility = "hidden";
