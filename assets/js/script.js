@@ -6,8 +6,9 @@ const numberTasks = document.getElementById("number-tasks");
 const numberComplete = document.getElementById("number-completed");
 
 
-
-// Add task to the list 
+/**
+ * Function to add and remove individual task to the list 
+ */
 function addTask() {
     if (inputBox.value === '') {
         alert("You need to write something!")
@@ -31,8 +32,8 @@ function addTask() {
 
 /**
  * Handles the event when items in the list container are clicked
- * if the task is clicked the function to check it applies
- * if the span with x is clicked the task is removed
+ * The items then become either checked or unchecked
+ * The number of completed todos are then incremented or decremented
  */
 listContainer.addEventListener("click", function (event) {
     if (event.target.tagName === "LI") {

@@ -29,12 +29,16 @@ body {
     background-color: rgb(240, 235, 227);
 }
 
+#toast {
+    width: 30%;
+    margin: 30px auto 10px;
+}
 
 .todo-app {
     width: 100%;
     max-width: 540px;
     background: #fff;
-    margin: 100px auto 20px;
+    margin: 30px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 10px;
 }
