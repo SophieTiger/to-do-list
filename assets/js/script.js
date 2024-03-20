@@ -19,6 +19,10 @@ function addTask() {
         span.innerHTML = "\u00d7";
         li.appendChild(span);
         incrementToDos();
+        span.onclick = function () {
+            span.parentElement.remove();
+            decrementToDos();
+        }
     }
     inputBox.value = "";
     saveData();
