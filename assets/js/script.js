@@ -37,6 +37,33 @@ function addTask() {
     saveData();
 
 }
+/**
+ * Eventlistener for Enter clicks - test
+ */
+/*
+inputBox.addEventListener("keypress", function(e)) {
+    if (e.keyCode === 13) {
+        if (inputBox.value === '') {
+            alert("You need to write something!");
+        } else {
+            let li = document.createElement("li");
+            li.innerHTML = inputBox.value;
+            listContainer.appendChild(li);
+            let span = document.createElement("span");
+            span.innerHTML = "\u00d7";
+            li.appendChild(span);
+            incrementToDos();
+            span.onclick = function () {
+                span.parentElement.remove();
+                decrementToDos();
+            }
+        }
+        inputBox.value = "";
+        saveData();
+
+    }
+}
+*/
 
 /**
  * Handles the event when items in the list container are clicked
