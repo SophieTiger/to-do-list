@@ -46,19 +46,20 @@ Built to use on the go, on the mobile phone, on a tablet or a computer, the app 
         ![Message saying: You Rock!](/assets/images/you_rock.png)
 
 -   Deleting tasks
-    There are two ways of deleting tasks on the list:
-    -   Clicking the x on the right hand side of the task removes that individual task from the list, and the Scoreboard of completed tasks is decremented by 1.
+    -   There are two ways of deleting tasks on the list:
+
+        -   Clicking the x on the right hand side of the task removes that individual task from the list, and the Scoreboard of completed tasks is decremented by 1.
 
         ![Image of list item and the delete icon](/assets/images/delete_row.png)
 
-    -   Clicking the Delete All button at the bottom to the left of the list deletes all items on the list and sets the Scoreboard to 0.
+        -   Clicking the Delete All button at the bottom to the left of the list deletes all items on the list and sets the Scoreboard to 0.
 
         ![Image of Delete All button and Scoreboard set to 0](/assets/images/delete_all.png)
 
 
+-   Ensuring all actions are saved
+    -    Functions to save data to local storage and display that data makes sure that the list is always up to date even if the browser is reloaded.
 
-
--   Saving data to local storage
     
 
 
