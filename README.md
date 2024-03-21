@@ -21,7 +21,17 @@ Built to use on the go, on the mobile phone, on a tablet or a computer, the app 
 -   Adding tasks
     -   Task is added by writing something in the input field and then clicking the add-button with the plus sign or pressing the Enter key.
     -   There is also a small x-sign created at the right of the task, that can be used to remove the task from the list.
+    -   The input field is cleared as soon as a task is added.
+
     ![Image of tasks on the list](/assets/images/add_task.png)
+
+    -   The Scoreboard at the top of the page keeps count of the number of tasks on the list.
+    ![Image of Scoreboard showing the number of tasks on the list](/assets/images/number_tasks.png)
+
+-   Checking off tasks
+    -   A task can be checked off by clicking either the task text or the empty circle to the left of the task text.
+    -   When a task is checked off the circle to the left becomes red with a check mark, and the text is striked through and greyed out.
+    ![Image of checked off list item](/assets/images/checked_task.png)
     
 
 
