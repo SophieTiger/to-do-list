@@ -31,7 +31,34 @@ Built to use on the go, on the mobile phone, on a tablet or a computer, the app 
 -   Checking off tasks
     -   A task can be checked off by clicking either the task text or the empty circle to the left of the task text.
     -   When a task is checked off the circle to the left becomes red with a check mark, and the text is striked through and greyed out.
+
     ![Image of checked off list item](/assets/images/checked_task.png)
+    -   The number of completed tasks are incremented on the Scoreboard when tasks are checked.
+    ![Image of Scoreboard showing the number of completed tasks on the list](/assets/images/nbr_completed_tasks.png)
+    -   Once a task is checked off a toast notification appears with a positive feedback. There are four different messages that appear randomly:
+    
+        ![Message saying: Good Job!](/assets/images/good_job.png)
+
+        ![Message saying: You're a star!](/assets/images/star.png)
+
+        ![Message saying: Well done!](/assets/images/well_done.png)
+
+        ![Message saying: You Rock!](/assets/images/you_rock.png)
+
+-   Deleting tasks
+    There are two ways of deleting tasks on the list:
+    -   Clicking the x on the right hand side of the task removes that individual task from the list, and the Scoreboard of completed tasks is decremented by 1.
+
+        ![Image of list item and the delete icon](/assets/images/delete_row.png)
+
+    -   Clicking the Delete All button at the bottom to the left of the list deletes all items on the list and sets the Scoreboard to 0.
+
+        ![Image of Delete All button and Scoreboard set to 0](/assets/images/delete_all.png)
+
+
+
+
+-   Saving data to local storage
     
 
 
