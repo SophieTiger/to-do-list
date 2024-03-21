@@ -65,8 +65,13 @@ Built to use on the go, on the mobile phone, on a tablet or a computer, the app 
 
 ### Features left to implement
 
+-   In the future it would be nice to have a library that saves to-do lists and marks them with a date for the user to be able to go back and look at specific dates and the tasks for that day.
+
 ## Testing
 -   Accessibiliy
+    -   I ran the page through Lighthouse and discovered that the SEO score was 91. Read the Content best practices and realized I can score higher by adding meta description.
+    After adding the meta data the SEO score went up to 100.
+
 -   HTML
 -   CSS
 -   JavaScript
@@ -79,17 +84,49 @@ Built to use on the go, on the mobile phone, on a tablet or a computer, the app 
 
 ### Version Control
 
+-   The site was created using Gitpod editor and pushed to Github to the remote repository 'to-do-list'.
+-   Git commands were used throughout the development to push the code to the remote repository. The following git commands were used:
+    -   git add . - to add the files to the staging area before being committed.
+    -   git commit -m "commit message" - to commit changes to the local repository queue that are ready for the final step.
+    -   git push - to push all committed code to the remote repository on Github.
+
 ### Deployment to Github pages
 
+-   The site was deployed to Github pages as follows:
+    -   In the Github repository, I navigated to Settings tab
+    -   From the source section drop-down menu, I selected the Master branch and Save
+    -   Once the Master branch was selected, the page provided the link to the website
+-   The live link: [Today's To-Do's](https://sophietiger.github.io/to-do-list/)
+
+
 ### Cloning of the Repository Code locally
+
+-   Go to the Github repository that you want to clone
+-   Click on the Code button located above all the project files
+-   Click on HTTPS and copy the repository link
+-   Open the IDE of your choice and and paste the copied git url into the IDE terminal
+-   The project is now created as a local clone
 
 ## Wireframe
 
 ## Credits
+-   A special thanks to my Mentor, Spencer, for the support and answering all my Questions! He has been a great help on the way.
 
 ### Content
 
+-   A big inspiration to start this project is credited @GreatStackDev on Youtube and especially this tutorial: [How To Create To-Do List App Using HTML CSS And JavaScript | Task App In JavaScript](https://www.youtube.com/watch?v=G0jO8kUrg-I)
+    -   Most of the html code for the todo-app div, the CSS styling for that, as well as the JavaScript code for adding tasks to the list, and marking them as checked was taken from that tutorial.
+
+-   I took inspiration from the Love Maths project to create the Scoreboard.
+
+
 ### Media
+
+-   The background image in the header was taken from [Pexels](https://www.pexels.com/)
+-   The emojis in the toast notifications were taken from [Unicode](https://www.unicode.org/emoji/format.html#col-vendor)
+-   The Favicon in the Title of the page was taken from [Favicon](https://favicon.io/)
+-   The check mark next to the Completed tasks count was taken from [Font Awesome](https://fontawesome.com/icons)
+-   The images for checked and unchecked list items were downloaded from @GreatStackDev's Youtube page.
 
 
 
