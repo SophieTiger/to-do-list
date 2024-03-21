@@ -4,6 +4,8 @@ const listContainer = document.getElementById("list-container");
 const scoreContainer = document.getElementById("score");
 const numberTasks = document.getElementById("number-tasks");
 const numberComplete = document.getElementById("number-completed");
+const addButton = document.getElementById("add-button");
+const deleteButton = document.getElementById("delete-all");
 
 // Array of messages to display when list item is checked
 const messages = [
@@ -12,6 +14,19 @@ const messages = [
     "🤩 Good Job! 🤩",
     "👊 You Rock! 👊"    
 ];
+
+
+//Initialize
+document.addEventListener("DOMContentLoaded", function () {
+  addButton.addEventListener("click", addTask);
+  inputBox.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      event.preventDefault(); // Prevents default Enter key behavior
+      addTask();
+    }
+  });
+  deleteButton.addEventListener("click", deleteAll);    
+});
 
 
 /**
@@ -37,33 +52,6 @@ function addTask() {
     saveData();
 
 }
-/**
- * Eventlistener for Enter clicks - test
- */
-/*
-inputBox.addEventListener("keypress", function(e)) {
-    if (e.keyCode === 13) {
-        if (inputBox.value === '') {
-            alert("You need to write something!");
-        } else {
-            let li = document.createElement("li");
-            li.innerHTML = inputBox.value;
-            listContainer.appendChild(li);
-            let span = document.createElement("span");
-            span.innerHTML = "\u00d7";
-            li.appendChild(span);
-            incrementToDos();
-            span.onclick = function () {
-                span.parentElement.remove();
-                decrementToDos();
-            }
-        }
-        inputBox.value = "";
-        saveData();
-
-    }
-}
-*/
 
 /**
  * Handles the event when items in the list container are clicked
