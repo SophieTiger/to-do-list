@@ -132,7 +132,7 @@ function toastMessage() {
     toast.style.visibility = "visible";
     setTimeout (function () {
         toast.style.visibility = "hidden";
-    }, 1500);
+    }, 15500);
 }
 
 /**
