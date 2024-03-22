@@ -1,11 +1,9 @@
 // Getters for html elements that sets variables  
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
-const scoreContainer = document.getElementById("score");
 const numberTasks = document.getElementById("number-tasks");
 const numberComplete = document.getElementById("number-completed");
-const addButton = document.getElementById("add-button");
-const deleteButton = document.getElementById("delete-all");
+
 
 // Array of messages to display when list item is checked
 const messages = [
@@ -185,5 +183,5 @@ function attachDeleteEventListeners() {
         }
     });
   }
-  
+
 showTask();

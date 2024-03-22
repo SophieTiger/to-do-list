@@ -90,6 +90,7 @@ Built to use on the go, on the mobile phone, on a tablet or a computer, the app 
 After creating that, and calling it every time a new task was added to the list and also in the function to display saved data, solved the problem.
 
 ### Unfixed bugs
+-   There are no unfixed bugs
 
 ## Deployment
 
