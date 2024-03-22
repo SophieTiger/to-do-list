@@ -12,20 +12,18 @@ const messages = [
     "💪 Well Done! 💪",
     "💫 You're a Star! 💫",
     "🤩 Good Job! 🤩",
-    "👊 You Rock! 👊"    
+    "👊 You Rock! 👊"
 ];
 
 
 //Initialize
 document.addEventListener("DOMContentLoaded", function () {
-  addButton.addEventListener("click", addTask);
-  inputBox.addEventListener("keydown", function (event) {
-    if (event.key === "Enter") {
-      event.preventDefault(); // Prevents default Enter key behavior
-      addTask();
-    }
-  });
-  deleteButton.addEventListener("click", deleteAll);    
+    inputBox.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+            event.preventDefault(); // Prevents default Enter key behavior
+            addTask();
+        }
+    });
 });
 
 
@@ -34,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
  */
 function addTask() {
     if (inputBox.value === '') {
-        alert("You need to write something!");
+        return;
     } else {
         let li = document.createElement("li");
         li.innerHTML = inputBox.value;
@@ -50,6 +48,7 @@ function addTask() {
     }
     inputBox.value = "";
     saveData();
+    attachDeleteEventListeners(); // Ensure newly added delete buttons have event listeners
 
 }
 
@@ -130,7 +129,7 @@ function toastMessage() {
     message = messages[messageChoice];
     toast.innerHTML = `<h2>${message}</h2>`;
     toast.style.visibility = "visible";
-    setTimeout (function () {
+    setTimeout(function () {
         toast.style.visibility = "hidden";
     }, 1500);
 }
@@ -168,5 +167,23 @@ function showTask() {
     listContainer.innerHTML = localStorage.getItem("listContainer");
     numberTasks.innerHTML = localStorage.getItem("numberTasks");
     numberComplete.innerHTML = localStorage.getItem("numberComplete");
+    attachDeleteEventListeners(); // Reattach event listeners for delete buttons
 }
+
+// Function to attach event listeners to delete buttons
+function attachDeleteEventListeners() {
+    const deleteSpans = document.querySelectorAll("#list-container li span");
+    deleteSpans.forEach(span => {
+        span.onclick = function() {
+            span.parentElement.remove();
+            decrementToDos();
+            // If the task being deleted was marked as completed, also decrement the completed count.
+            if (span.parentElement.classList.contains("checked")) {
+                decrementCompletedToDos();
+            }
+            saveData();
+        }
+    });
+  }
+  
 showTask();
