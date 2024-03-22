@@ -77,6 +77,13 @@ Built to use on the go, on the mobile phone, on a tablet or a computer, the app 
 -   HTML
 -   CSS
 -   JavaScript
+-   User Acceptance Testing
+    -   I tested that tasks can be added to the list and that Number of tasks at the top of the page are then incremented by 1.
+    -   I tested that tasks can be checked off on the list and that Number of completed tasks at the top of the page are then decremented by 1.
+    -   I tested that when a task is checked as completed, a random toast notification with positive feedback is shown for 1,5 seconds.
+    -   I tested that individual tasks can be deleted by clicking the x-mark to the right of the list item, and that the number of either tasks or completed tasks, at the scoreboard at the top of the page, is then changed according to the list item that was deleted.
+    -   I tested that the "Delete All" button is working and deletes all items on the list and sets the Scorecoard to zero on both tasks and completed tasks.
+    -   I tested that the local storage of data is working by adding items to the list and then refreshing the page. Items were still there.
 
 ## Bugs
 -   A bug that I was working with a lot was the problem that it was not possible to remove individual list items from the list after the page was refreshed. I tried a lot of different methods to fix it. After discussion with my mentor we came up with the idea that a new function to attach Event listeners to delete buttons (spans) was needed. 
