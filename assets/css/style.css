@@ -161,7 +161,12 @@ ul li span:hover {
 
 @media (max-width: 320px) {
     .todo-app {
-        width: 100%
+        width: 100%;
+        padding: 40px 0px;
+
+    }
+    #delete-all {
+        margin-left: 10px;
     }
 }
 
