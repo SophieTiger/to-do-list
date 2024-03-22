@@ -4,7 +4,7 @@ Sometimes life brings us so much that we need to do and structure, and most of t
 This app gives the user a clear view of the number of tasks, completed tasks, as well as it gives positive feedback every time the user completes a task!
 Built to use on the go, on the mobile phone, on a tablet or a computer, the app saves data to local storage so that the user can always trust it's reliability.
 
-![Image of to-do app on different screen sizes](/assets/images/responsive_to-do.png)
+![Image of to-do app on different screen sizes](/assets/images/responsive.png)
 
 ## Features
 -   Header
@@ -71,6 +71,8 @@ Built to use on the go, on the mobile phone, on a tablet or a computer, the app 
 -   Accessibiliy
     -   I ran the page through Lighthouse and discovered that the SEO score was 91. Read the Content best practices and realized I can score higher by adding meta description.
     After adding the meta data the SEO score went up to 100.
+
+    ![Image of Lighthouse testing score](/assets/images/lighthouse.png) 
 
 -   HTML
 -   CSS
