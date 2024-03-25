@@ -75,8 +75,20 @@ Built to use on the go, on the mobile phone, on a tablet or a computer, the app 
     ![Image of Lighthouse testing score](/assets/images/lighthouse.png) 
 
 -   HTML
+    -   I ran the code through the [W3C HTML validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fsophietiger.github.io%2Fto-do-list%2F). No errors or warnings.
+
+    ![Image of W3C HTML validator check](/assets/images/html_validator.png)
+
 -   CSS
+    -   I ran the code through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsophietiger.github.io%2Fto-do-list%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en). I discovered 2 errors in the styling of the buttons. I fixed that and then no errors found.
+
+    ![Image of W3C CSS validator check](/assets/images/css_validator.png)
+
 -   JavaScript
+    -   I ran the code through [JS Hint](https://jshint.com/) and discovered 18 warnings of which 2 were missing semicolons. Fixed that and 16 warnings remains of which I can't do anything about as far as I know. No errors.
+
+    ![Image of JS Hint Metrics](/assets/images/jsHint_validator.png)
+
 -   Feature Testing
     -   I tested that tasks can be added to the list and that Number of tasks at the top of the page are then incremented by 1.
     -   I tested that tasks can be checked off on the list and that Number of completed tasks at the top of the page are then decremented by 1.
