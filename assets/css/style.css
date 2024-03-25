@@ -6,7 +6,7 @@
 
 }
 
-/* Heading and Scoreboard */
+/* Header, Main heading and Scoreboard */
 
 header {
     background: url("../images/desk_background.jpg");
@@ -29,19 +29,21 @@ header {
     padding-top: 20px;
 }
 
-/* Body and list area */
+/* Main body styles */
 
 body {
     background-color: rgb(240, 235, 227);
     font-family: 'Biryani', sans-serif;
 }
 
+/* Toast notification */
 #toast {
     width: 30%;
     margin: 30px auto 10px;
     text-align: center;
 }
 
+/* Todo-app styles with inspiration from GreatStackDev on YouTube */
 .todo-app {
     width: 100%;
     max-width: 540px;
@@ -76,7 +78,8 @@ button {
     outline: none;
     padding: 8px 16px;
     background: #b1e6e0;
-    font-size: 25px;    
+    font-size: 25px;
+    font-weight: bold;    
     cursor: pointer;
     border-radius: 50%;
     color: black;
@@ -129,6 +132,7 @@ ul li span:hover {
     background: #edeef0;
 }
 
+/* Button to delete all list items */
 #delete-all {
     right: 20px;
     bottom: 5px;
@@ -139,23 +143,26 @@ ul li span:hover {
     border-radius: 5px;
     margin-top: 50px;
     padding-left: 20px;
+    font-weight: bold;
 }
-
 
 /* Media queries */
 
+/* Tablets */
 @media screen and (max-width: 768px) {
     header {
         height: 200px;
     }
 }
 
+/* Large Mobiles */
 @media screen and (max-width: 440px) {
     #toast {
         width: 60%;
     }
 }
 
+/* Small Mobiles */
 @media (max-width: 320px) {
     .todo-app {
         width: 100%;
