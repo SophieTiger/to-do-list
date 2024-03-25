@@ -132,6 +132,9 @@ After creating that, and calling it every time a new task was added to the list 
 -   The project is now created as a local clone
 
 ## Wireframe
+-   The Wireframe that I drew as a template is pretty straight forward. It should look almost the same on all screen sizes and have the basic functions of telling the user what it is about, what can be done and that there is a toast message popping up when a task is marked as completed:
+    
+![Image of the wireframe to-do-list](/assets/images/wireframe.png)
 
 ## Credits
 -   A special thanks to my Mentor, Spencer, for the support, help with troubleshooting, and answering all my Questions. He has been a great help on the way!
