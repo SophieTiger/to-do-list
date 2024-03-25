@@ -74,6 +74,8 @@ Built to use on the go, on the mobile phone, on a tablet or a computer, the app 
 
     ![Image of Lighthouse testing score](/assets/images/lighthouse.png) 
 
+-   I tested and confirmed that the page works in different browsers; Chrome, Safari and Firefox.
+
 -   HTML
     -   I ran the code through the [W3C HTML validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fsophietiger.github.io%2Fto-do-list%2F). No errors or warnings.
 
