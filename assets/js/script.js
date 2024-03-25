@@ -169,7 +169,7 @@ function showTask() {
     listContainer.innerHTML = localStorage.getItem("listContainer");
     numberTasks.innerHTML = localStorage.getItem("numberTasks");
     numberComplete.innerHTML = localStorage.getItem("numberComplete");
-    attachDeleteEventListeners(); // Reattach event listeners for delete buttons
+    attachDeleteEventListeners(); // Reattach event listeners to delete spans
 }
 
 /**
@@ -178,7 +178,7 @@ function showTask() {
 function attachDeleteEventListeners() {
     const deleteSpans = document.querySelectorAll("#list-container li span");
     deleteSpans.forEach(span => {
-        span.onclick = function() {
+        span.onclick = function () {
             span.parentElement.remove();
             decrementToDos();
             // If the task being deleted was marked as completed, also decrement the completed count.
@@ -188,6 +188,6 @@ function attachDeleteEventListeners() {
             saveData();
         }
     });
-  }
+}
 
 showTask();

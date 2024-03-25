@@ -6,6 +6,8 @@
 
 }
 
+/* Heading and Scoreboard */
+
 header {
     background: url("../images/desk_background.jpg");
     background-size: cover;
@@ -19,13 +21,15 @@ header {
     padding-top: 20px;
     font-family: 'The Girl Next Door', sans-serif;
     font-size: 2em;
-    
+
 }
 
 #score {
     text-align: center;
     padding-top: 20px;
 }
+
+/* Body and list area */
 
 body {
     background-color: rgb(240, 235, 227);
@@ -87,7 +91,6 @@ ul li {
     user-select: none;
     cursor: pointer;
     position: relative;
-
 }
 
 ul li::before {
@@ -101,7 +104,6 @@ ul li::before {
     background-position: center;
     top: 12px;
     left: 8px;
-
 }
 
 ul li.checked {
@@ -142,7 +144,6 @@ ul li span:hover {
 }
 
 
-
 /* Media queries */
 
 @media screen and (max-width: 768px) {
@@ -155,19 +156,15 @@ ul li span:hover {
     #toast {
         width: 60%;
     }
-
-    
 }
 
 @media (max-width: 320px) {
     .todo-app {
         width: 100%;
         padding: 40px 0px;
-
     }
+
     #delete-all {
         margin-left: 10px;
     }
 }
-
-    
