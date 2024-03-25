@@ -66,8 +66,7 @@ input {
     border: none;
     outline: none;
     background: transparent;
-    padding: 10px;
-    font-weight: 14px;
+    padding: 10px;    
     font-size: 16px;
     border-radius: 50px;
 }
@@ -77,8 +76,7 @@ button {
     outline: none;
     padding: 8px 16px;
     background: #b1e6e0;
-    font-size: 25px;
-    font-weight: 25px;
+    font-size: 25px;    
     cursor: pointer;
     border-radius: 50%;
     color: black;
@@ -136,7 +134,7 @@ ul li span:hover {
     bottom: 5px;
     color: #555;
     background-color: #fff;
-    font-size: 14px;
+    font-size: 15px;
     border: 1px solid #555;
     border-radius: 5px;
     margin-top: 50px;
