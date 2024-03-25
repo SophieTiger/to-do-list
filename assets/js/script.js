@@ -152,7 +152,9 @@ function deleteAll() {
     saveData();
 }
 
-// Local storage of data
+/**
+ * Local storage of data
+ */
 function saveData() {
     localStorage.setItem("listContainer", listContainer.innerHTML);
     localStorage.setItem("numberTasks", numberTasks.innerHTML);
@@ -160,7 +162,9 @@ function saveData() {
 
 }
 
-//Function to display saved data
+/**
+ * Function to display saved data
+ */
 function showTask() {
     listContainer.innerHTML = localStorage.getItem("listContainer");
     numberTasks.innerHTML = localStorage.getItem("numberTasks");
@@ -168,7 +172,9 @@ function showTask() {
     attachDeleteEventListeners(); // Reattach event listeners for delete buttons
 }
 
-// Function to attach event listeners to delete buttons
+/**
+ * Function to attach event listeners to delete spans
+ */
 function attachDeleteEventListeners() {
     const deleteSpans = document.querySelectorAll("#list-container li span");
     deleteSpans.forEach(span => {

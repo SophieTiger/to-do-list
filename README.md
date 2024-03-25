@@ -77,7 +77,7 @@ Built to use on the go, on the mobile phone, on a tablet or a computer, the app 
 -   HTML
 -   CSS
 -   JavaScript
--   User Acceptance Testing
+-   Feature Testing
     -   I tested that tasks can be added to the list and that Number of tasks at the top of the page are then incremented by 1.
     -   I tested that tasks can be checked off on the list and that Number of completed tasks at the top of the page are then decremented by 1.
     -   I tested that when a task is checked as completed, a random toast notification with positive feedback is shown for 1,5 seconds.
@@ -122,7 +122,7 @@ After creating that, and calling it every time a new task was added to the list 
 ## Wireframe
 
 ## Credits
--   A special thanks to my Mentor, Spencer, for the support and answering all my Questions! He has been a great help on the way.
+-   A special thanks to my Mentor, Spencer, for the support, help with troubleshooting, and answering all my Questions. He has been a great help on the way!
 
 ### Content
 
