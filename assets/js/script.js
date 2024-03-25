@@ -42,7 +42,7 @@ function addTask() {
         span.onclick = function () {
             span.parentElement.remove();
             decrementToDos();
-        }
+        };
     }
     inputBox.value = "";
     saveData();
@@ -186,7 +186,7 @@ function attachDeleteEventListeners() {
                 decrementCompletedToDos();
             }
             saveData();
-        }
+        };
     });
 }
 
