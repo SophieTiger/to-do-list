@@ -4,7 +4,6 @@ const listContainer = document.getElementById("list-container");
 const numberTasks = document.getElementById("number-tasks");
 const numberComplete = document.getElementById("number-completed");
 
-
 // Array of messages to display when list item is checked
 const messages = [
     "💪 Well Done! 💪",
@@ -12,7 +11,6 @@ const messages = [
     "🤩 Good Job! 🤩",
     "👊 You Rock! 👊"
 ];
-
 
 //Initialize
 document.addEventListener("DOMContentLoaded", function () {
@@ -23,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-
 
 /**
  * Function to add and remove individual task to the list 
@@ -47,7 +44,6 @@ function addTask() {
     inputBox.value = "";
     saveData();
     attachDeleteEventListeners(); // Ensure newly added delete buttons have event listeners
-
 }
 
 /**
@@ -68,10 +64,6 @@ listContainer.addEventListener("click", function (event) {
     }
 }, false);
 
-
-
-
-
 /**
  * Increments the number of to-dos by 1 
  * on the "score board"
@@ -81,7 +73,6 @@ function incrementToDos() {
     tasks = tasks + 1;
     numberTasks.innerText = tasks;
     saveData();
-
 }
 
 /**
@@ -94,7 +85,6 @@ function decrementToDos() {
     tasks = tasks - 1;
     numberTasks.innerText = tasks;
     saveData();
-
 }
 
 /**
@@ -140,7 +130,6 @@ function getRandomNumber() {
     return Math.floor(Math.random() * 4);
 }
 
-
 /**
  * Deletes all tasks from the list
  * when Delete All button is clicked
@@ -159,7 +148,6 @@ function saveData() {
     localStorage.setItem("listContainer", listContainer.innerHTML);
     localStorage.setItem("numberTasks", numberTasks.innerHTML);
     localStorage.setItem("numberComplete", numberComplete.innerHTML);
-
 }
 
 /**
