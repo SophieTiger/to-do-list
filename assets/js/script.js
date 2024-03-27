@@ -12,7 +12,7 @@ const messages = [
     "👊 You Rock! 👊"
 ];
 
-//Initialize
+//Initialize loading od the page
 document.addEventListener("DOMContentLoaded", function () {
     inputBox.addEventListener("keydown", function (event) {
         if (event.key === "Enter") {
