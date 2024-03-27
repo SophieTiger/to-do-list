@@ -103,6 +103,8 @@ Built to use on the go, on the mobile phone, on a tablet or a computer, the app 
 -   A bug that I was working with a lot was the problem that it was not possible to remove individual list items from the list after the page was refreshed. I tried a lot of different methods to fix it. After discussion with my mentor we came up with the idea that a new function to attach Event listeners to delete buttons (spans) was needed. 
 After creating that, and calling it every time a new task was added to the list and also in the function to display saved data, solved the problem.
 
+-   Local Storage was a challenge to get to save and display data. There was an issue with how to display the initial Scoreboard since then there was no data stored and the key value was then empty. I researched local storage and found the solution by adding if statements to the showTask function. This webpage was of great help [mdn web docs_](https://developer.mozilla.org/en-US/docs/Web/API/Storage)
+
 ### Unfixed bugs
 -   There are no unfixed bugs
 
