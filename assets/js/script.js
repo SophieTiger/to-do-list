@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
  * GreatStackDevs tutorial on his YouTube Channel
  */
 function addTask() {
-    if (inputBox.value.trim === '') {
+    if (inputBox.value.trim () === '') {
         inputBox.value = "";
         return;
     } else {
