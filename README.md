@@ -1,7 +1,9 @@
 # Today's To-Do's - the positive feedback app
 The Today's To-Do's list is an application for all busy people out there that needs to have an easy way to structure the Today's To-Do's.
 Sometimes life brings us so much that we need to do and structure, and most of that is not seen by anyone but ourselves. We accomplish many things without getting credit for it or a pat at the back.
+
 This app gives the user a clear view of the number of tasks, completed tasks, as well as it gives positive feedback every time the user completes a task!
+
 Built to use on the go, on the mobile phone, on a tablet or a computer, the app saves data to local storage so that the user can always trust it's reliability.
 
 ![Image of to-do app on different screen sizes](/assets/images/responsive.png)
@@ -143,7 +145,7 @@ After creating that, and calling it every time a new task was added to the list 
 ![Image of the wireframe to-do-list](/assets/images/wireframe.png)
 
 ## Credits
--   A special thanks to my Mentor, Spencer, for the support, help with troubleshooting, and answering all my Questions. He has been a great help on the way!
+-   A special thanks to my Mentor, Spencer Barriball, for the support, help with troubleshooting, and answering all my Questions. He has been a great help on the way!
 
 ### Content
 
