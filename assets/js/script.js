@@ -26,7 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
  * Function to add and remove individual task to the list 
  */
 function addTask() {
-    if (inputBox.value === '') {
+    if (inputBox.value.trim === '') {
+        inputBox.value = "";
         return;
     } else {
         let li = document.createElement("li");
@@ -154,10 +155,17 @@ function saveData() {
  * Function to display saved data
  */
 function showTask() {
+  //check if these local storage items exist
+  if (localStorage.hasOwnProperty('listContainer')) {
     listContainer.innerHTML = localStorage.getItem("listContainer");
+  }
+  if (localStorage.hasOwnProperty('numberTasks')) {
     numberTasks.innerHTML = localStorage.getItem("numberTasks");
+  }
+  if (localStorage.hasOwnProperty('numberComplete')) {
     numberComplete.innerHTML = localStorage.getItem("numberComplete");
-    attachDeleteEventListeners(); // Reattach event listeners to delete spans
+  }
+  attachDeleteEventListeners(); // Reattach event listeners to delete spans
 }
 
 /**
