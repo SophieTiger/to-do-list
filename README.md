@@ -105,6 +105,8 @@ After creating that, and calling it every time a new task was added to the list 
 
 -   Local Storage was a challenge to get to save and display data. There was an issue with how to display the initial Scoreboard since then there was no data stored and the key value was then empty. I researched local storage and found the solution by adding if statements to the showTask function. This webpage was of great help [mdn web docs_](https://developer.mozilla.org/en-US/docs/Web/API/Storage)
 
+-   Discovered that blank spaces were accepted in the input box. Searched Stackoverflow and found that a trim method could solve that. Searched [W3Schools](https://www.w3schools.com/jsref/jsref_trim_string.asp) and added it to the addTask function and problem was solved.
+
 ### Unfixed bugs
 -   There are no unfixed bugs
 
