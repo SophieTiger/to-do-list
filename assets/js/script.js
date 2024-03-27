@@ -24,6 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /**
  * Function to add and remove individual task to the list 
+ * The code to add a list item and attach the span element to that is credited 
+ * GreatStackDevs tutorial on his YouTube Channel
  */
 function addTask() {
     if (inputBox.value.trim === '') {
