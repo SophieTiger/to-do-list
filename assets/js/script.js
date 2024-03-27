@@ -24,14 +24,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /**
  * Function to add and remove individual task to the list 
- * The code to add a list item and attach the span element to that is credited 
- * GreatStackDevs tutorial on his YouTube Channel
  */
 function addTask() {
     if (inputBox.value.trim () === '') {
         inputBox.value = "";
         return;
-    } else {
+    } else { //Most of this part is credited GreatStackDev Tutorial on YouTube
         let li = document.createElement("li");
         li.innerHTML = inputBox.value;
         listContainer.appendChild(li);
